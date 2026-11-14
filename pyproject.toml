@@ -1,0 +1,14 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[project]
+name="unicode-sentinel"
+version="0.1.0"
+description="Invisible Unicode security scanner"
+requires-python=">=3.10"
+license={text="MIT"}
+[project.scripts]
+unicode-sentinel="unicode_sentinel:main"
+[tool.setuptools]
+package-dir={""="src"}
+py-modules=["unicode_sentinel"]
